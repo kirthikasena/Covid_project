@@ -40,7 +40,7 @@ const Signup = () => {
 	return (
 		<div className={styles.signup_container}>
 			<img  src={Quarantine} alt="Quarantine period image" height="400" className={styles.start} />
-			<div className={styles.signup_form_container}>
+			<form className={styles.signup_form_container} onSubmit={handleSubmit} >
 				<div className={styles.left}>
 				<h1>Create Account</h1>
 						<input
@@ -91,12 +91,12 @@ const Signup = () => {
 					</Link>
 				</div>
 				<div className={styles.right}>
-					<form className={styles.form_container} onSubmit={handleSubmit}>
 					
-				
-					</form>
+					
 				</div>
-			</div>
+			
+			</form>
+			
 			<img  src={Covid_Virus} alt="covid virus image" height="300" className={styles.covid} />
 		</div>
 	);
