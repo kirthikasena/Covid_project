@@ -2,8 +2,9 @@ import { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
-import Covid_Virus from "../../images/Covid.png";
-import Quarantine from "../../images/Quarantine Period.png";
+import im2 from "../../images/im2.png";
+import im11 from "../../images/im11.png";
+
 
 const Signup = () => {
 	const [data, setData] = useState({
@@ -38,8 +39,10 @@ const Signup = () => {
 	};
 
 	return (
+		
 		<div className={styles.signup_container}>
-			<img  src={Quarantine} alt="Quarantine period image" height="400" className={styles.start} />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+			<img  src={im11} alt="im11" height="400" className={styles.start} />
 			<div className={styles.signup_form_container}>
 				<div className={styles.left}>
 				<h1>Create Account</h1>
@@ -97,7 +100,7 @@ const Signup = () => {
 					</form>
 				</div>
 			</div>
-			<img  src={Covid_Virus} alt="covid virus image" height="300" className={styles.covid} />
+			<img  src={im2} alt="im2" height="300" className={styles.covid} />
 		</div>
 	);
 };
