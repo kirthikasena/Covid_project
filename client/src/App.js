@@ -16,12 +16,10 @@ function App() {
 
 	return (
 		<Routes>
-			{user && <Route path="/" exact element={<Main />} />}
+			{user && <Route path="/" exact element={<Home />} />}
 			<Route path="/LoginOrSignup" exact element={<LoginOrSignup />} />
 			<Route path="/signup" exact element={<Signup />} />
 			<Route path="/login" exact element={<Login />} />
-			
-			<Route path="/" element={<Navigate replace to="/login" />} />
 			<Route path="/Home" exact element={<Home />} />
 			<Route path="/Readandagree" exact element={<Readandagree />} />
 			<Route path="/Checkcough1" exact element={<Checkcough1 />} />
@@ -29,6 +27,7 @@ function App() {
 			<Route path="/Results1" exact element={<Results1 />} />
 			<Route path="/Results2" exact element={<Results2 />} />
 			<Route path="/Readandagree" exact element={<Readandagree />} />
+			<Route path="/" element={<Navigate replace to="/LoginOrSignup" />} />
 			
 		</Routes>
 	);
