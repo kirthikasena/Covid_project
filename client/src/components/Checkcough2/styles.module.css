@@ -1,0 +1,30 @@
+.background{
+    position: absolute;
+  width: 1518px;
+  height: 730px;
+  
+  background: linear-gradient(180deg, #CCC1ED 0%, #A1B3FF 100%);
+  }
+  
+  .img1{
+    position: absolute;
+  left: -15.93%;
+  right: 80.68%;
+  top: -35.58%;
+  bottom: 71.46%;
+  
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+  }
+  
+  .img2{
+    position: absolute;
+    width: 100px;
+  height: 150px;
+  left: 74.96%;
+  right: 8.82%;
+  top: 71.63%;
+  bottom: 4.53%;
+  }
+  
+  

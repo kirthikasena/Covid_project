@@ -38,6 +38,7 @@ const Login = () => {
 		
 	// <div styles={{ backgroundImage:`url(${Covid_Virus})`,backgroundRepeat:"cover" }}id="main">
 	<div className={styles.pagebackground}>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 	<div className={styles.Login}>
 		<div className={styles.login_container}>
 			<div className={styles.login_form_container}>
