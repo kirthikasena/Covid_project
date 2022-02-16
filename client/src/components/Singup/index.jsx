@@ -40,6 +40,7 @@ const Signup = () => {
 
 	return (
 		<div className={styles.signup_container}>
+
 		<img  src={im11} alt="Quarantine period image" height="400" className={styles.start} />
 		<div className={styles.signup_form_container}>
 			<div className={styles.left}>
