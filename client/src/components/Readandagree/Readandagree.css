@@ -1,4 +1,4 @@
-.btn{
+.rbtn{
     display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,16 +8,16 @@
   position: absolute;
   width: 273px;
   height: 50px;
-  left: 380px;
+  left: 370px;
   top: 500px;
   font-size: l;
   /* Iris/60 */
   
-  background: #A5A6F6;
+  background: #5c5ff091;
   border-color: #FFFFFF;
   border-radius: 6px;
   }
-  .background{
+  .rbackground{
     position: absolute;
   width: 1517px;
   height: 729px;
@@ -25,9 +25,10 @@
   top: 0.0%;
   
   background: url(../../images/im8.png);
+  background-size: cover;
   }
   
-  .vector{
+  .rvector{
     position: absolute;
   
   right: 10%;
@@ -41,7 +42,7 @@
   border-radius: 20px;
   
   width: 1000px;
-  height: 530px;
+  height: 580px;
   left: 250px;
   top: 75px;
   
@@ -56,7 +57,7 @@
   color: #FFFFFF;
   }
   
-  .vector.p{
+  .rvector.p{
     position: absolute;
   width: 868px;
   height: 468px;
@@ -74,7 +75,7 @@
   color: #FFFFFF;
   }
   
-  .text{
+  .rtext{
     color:ghostwhite;
   }
   

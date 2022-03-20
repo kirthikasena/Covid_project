@@ -82,9 +82,9 @@ const Signup = () => {
 						className={styles.input}
 					/>
 					{error && <div className={styles.error_msg}>{error}</div>}
-					<button type="submit" className={styles.green_btn}>
+					<Link to="/Readandagree"><button type="submit" className={styles.green_btn}>
 						Sign Up
-					</button>
+					</button></Link>
 					<h5 style={{ color: 'white' }}>Already have an account? Log In</h5>
 				<Link to="/login">
 					<button type="button" className={styles.white_btn}>

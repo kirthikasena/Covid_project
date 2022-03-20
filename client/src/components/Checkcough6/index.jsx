@@ -1,12 +1,12 @@
 import { ReactMic } from "react-mic";
 import React from "react";
-import  "./checkcough1.css";
+import  "./checkcough6.css";
 import MicRecorder from 'mic-recorder-to-mp3';
 import im2 from "../../images/im2.png";
 import { Link, useNavigate } from "react-router-dom";
 const Mp3Recorder = new MicRecorder({ bitRate: 128 });
 
-class Checkcough1 extends React.Component {
+class Checkcough6 extends React.Component {
   
   constructor(props) {
     super(props);
@@ -71,7 +71,7 @@ class Checkcough1 extends React.Component {
       <div class="chbackground">
         <img src={im2} alt="image" class="chimg2"></img>
         <img src={im2} alt="image" class="chimg3"></img>
-        <h1 class="ch1line1">Record your shallow breath for 4 seconds</h1>
+        <h1 class="ch6line1">Record the fast counting for 4 seconds</h1>
         <div class="animationbox">
           <ReactMic 
           record={this.state.record}
@@ -83,11 +83,11 @@ class Checkcough1 extends React.Component {
         /></div>
           <button onClick={this.start} disabled={this.state.isRecording} class="chbtn1">Record</button>
           <button onClick={this.stop} disabled={!this.state.isRecording} class="chbtn2">Stop</button>
-          <Link to="/Checkcough2"><button class="chbtn3">Next</button></Link>
+          <button class="chbtn3">Next</button>
           <audio src={this.state.blobURL} controls="controls" class="audiobox"/>
       </div>
     );
     }
   }
 
-export default Checkcough1;
+export default Checkcough6;

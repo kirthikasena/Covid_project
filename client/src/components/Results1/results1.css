@@ -1,92 +1,72 @@
-.background{
-    position: absolute;
-    width: 1515px;
-    height: 730px;
-    top: 0.0%;
-    left:0.0%;
-    
-  background: url(../../images/im16.png);;
+.re1background{
+    position: relative;
+  width: 1518px;
+  height: 730px;
+  
+  background: linear-gradient(180deg, #4e68db 0%, #8f09f742 100%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  box-sizing: border-box;
+  backdrop-filter: blur(4px);
   }
   
-  .img1{
+  .re1img{
     position: absolute;
-  left: 0.46%;
-  right: 42.3%;
-  bottom: 10.33%;
-  
-  
-  width: 600px;
-    height: 500px;
-  
+  left: 54.03%;
+  right: -8.75%;
+  top: 1%;
+  bottom: 13.67%;
   }
   
-  .img2{
+  .re1line1{
     position: absolute;
-  left: 30.72%;
-  right: 63.47%;
-  top: -40.17%;
-  bottom: 71.06%;
-  width: 500px;
-    height: 500px;
+  left: 4.65%;
+  right: 35.35%;
+  top: 30.89%;
+  bottom: 38.18%;
   
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 74px;
+  
+  color: #FFFFFF;
   }
   
-  .img3{
+  .re1line2{
     position: absolute;
-    left: -20.01%;
-    right: 37.5%;
-    top: -30.2%;
-    bottom: 12.3%;
-    width: 600px;
-    height: 500px;
+  left: 4.65%;
+  right: 35.35%;
+  top: 44.89%;
+  bottom: 25.18%;
+  
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 74px;
+  
+  color: #FFFFFF;
   }
-  
-  .im4{
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    
-  }
-  .line1{
-    position: absolute;
-    left: 40%;
-    right:5.85%;
-    top: 10.9%;
-    bottom: 54.33%;
-    color: black;
-    font-family: Convergence;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 64px;
-    line-height: 48px;
-    /* or 75% */
-    
-    letter-spacing: -1px;
-  
-  
-  }
-  
-  .btn{
+  .re1btn{
     display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1px 1px;
+  padding: 4px 16px;
   
   position: absolute;
-  left: 45%;
-    right:5.85%;
-  top: 40.63%;
-  bottom: 40.52%;
-  height:60px;
-  width:300px;
-  
+  width: 273px;
+  height: 50px;
+  left: 280px;
+  top: 500px;
+  font-size: l;
+  border-color: black;
   background: #FFFFFF;
   border-radius: 6px;
-  
+  text-align: center;
   }
-  
-   
   #menuToggle {
     display: block;
     position: absolute;
@@ -102,7 +82,7 @@
   #menuToggle a {
     text-decoration: none;
     color: #232323;
-   
+    font-family: Convergence;
     transition: color 0.3s ease;
   }
    
