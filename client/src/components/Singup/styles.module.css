@@ -4,7 +4,7 @@
 	/* display: flex;
 	align-items: center;
 	justify-content: center; */
-	background: linear-gradient(180deg, #6a85ff 0%, rgba(156, 7, 255, 0.514) 100%);
+	background: linear-gradient(180deg, #CCC1ED 0%, #A1B3FF 100%);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	flex-direction: column;
 	overflow:-moz-hidden-unscrollable;
@@ -51,7 +51,7 @@
 	margin: 50px;
 	
 	margin-bottom: 0px;
-	width: 1500px;
+	width: 1400px;
 	height: 70vh;
 	display: flex;
 	border-radius: 10px;
@@ -92,7 +92,7 @@
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
     
-	background-image: url(../../images/im12.png); 
+	background-image: url(../../images/im10.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

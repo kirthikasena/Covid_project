@@ -15,9 +15,12 @@ const Home = () => {
 
     <div class="background">
       
-    
-     <p class="line1"><b>DefCov</b></p>
-     <Link to="/LoginOrSignup"><button class="hbtn"><h2 class="line2">Take a test</h2></button></Link>
+   
+     <p class="Hline1"><b>DefCov</b></p>
+     <h1 class="Hline2"><b>The best way to cure covid-19 is to Prevent.</b></h1>
+     <Link to="/login"><button class="hbtn1"><h3 class="label">Log In</h3></button></Link>
+        <Link to="/signup"><button class="hbtn2"><h3 class="label">Sign Up</h3></button></Link> 
+        
      <nav role="navigation">
   <div id="menuToggle">
     

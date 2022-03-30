@@ -81,9 +81,9 @@ class Checkcough6 extends React.Component {
           strokeColor="#000000"
           ackgroundColor="#FFFFFF"
         /></div>
-          <button onClick={this.start} disabled={this.state.isRecording} class="chbtn1">Record</button>
-          <button onClick={this.stop} disabled={!this.state.isRecording} class="chbtn2">Stop</button>
-          <button class="chbtn3">Next</button>
+          <button onClick={this.start} disabled={this.state.isRecording} class="chbtn1"><b>Record</b></button>
+          <button onClick={this.stop} disabled={!this.state.isRecording} class="chbtn2"><b>Stop</b></button>
+          <button class="chbtn3"><b>Next</b></button>
           <audio src={this.state.blobURL} controls="controls" class="audiobox"/>
       </div>
     );

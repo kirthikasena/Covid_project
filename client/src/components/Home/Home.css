@@ -47,13 +47,13 @@
     height: 10px;
     
   }
-  .line1{
+  .Hline1{
     position: absolute;
     left: 40%;
     right:40%;
     top: 10%;
     
-    color: white;
+    color: black;
     font-family: Convergence;
     font-style: normal;
     font-weight: normal;
@@ -65,29 +65,69 @@
   
   
   }
+  .Hline2{
+    position: absolute;
+    left: 33%;
+ 
+    top: 35%;
+    
+    color: black;
+    font-family: Convergence;
+    font-style: normal;
+    font-weight: normal;
+    
+    /* or 75% */
+    
+    letter-spacing: -1px;
   
-  .hbtn{
-    display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-  padding: 1px 1px;
-  border-color: black;
-  position: absolute;
-  left: 45%;
-    right:5.85%;
-  top: 40.63%;
-  bottom: 40.52%;
-  height:60px;
-  width:300px;
-  
-  background: transparent;
-  border-radius: 6px;
-  
-
-
   
   }
+  
+  .hbtn1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 1px;
+    width: 110px;
+    height: 40px;
+    left: 42%;
+    top: 50%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    border-color: black;
+    background: white;
+    border-radius: 6px;
+    text-align: center;
+    
+  }
+  
+  .hbtn2{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 1px;
+    width: 110px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    border-color: black;
+    background: white;
+    border-radius: 6px;
+  }
+  
+ 
   button:hover {
     transform: scale(1.1);
     transition: 1s ease-in-out;
