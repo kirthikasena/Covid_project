@@ -13,6 +13,8 @@ import Checkcough5 from "./components/Checkcough5";
 import Checkcough6 from "./components/Checkcough6";
 import Results1 from "./components/Results1";
 import Results2 from "./components/Results2";
+import Button from 'react-bootstrap/Button';
+import Image from 'react-bootstrap/Image';
 
 
 function App() {
@@ -34,7 +36,6 @@ function App() {
 			<Route path="/Checkcough6" exact element={<Checkcough6 />} />
 			<Route path="/Results1" exact element={<Results1 />} />
 			<Route path="/Results2" exact element={<Results2 />} />
-			<Route path="/Readandagree" exact element={<Readandagree />} />
 			<Route path="/" element={<Navigate replace to="/Home" />} />
 			
 		</Routes>

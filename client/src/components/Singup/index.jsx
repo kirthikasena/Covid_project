@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
-
+import Form from 'react-bootstrap/Form';
 
 
 const Signup = () => {
@@ -38,9 +38,11 @@ const Signup = () => {
 	};
 
 	return (
-		<div className={styles.signup_container}>
 
-		
+		<div className={styles.signup_container}>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+		<Form>
+		<Form.Group className="mb-3">
 		<div className={styles.signup_form_container}>
 			<div className={styles.left}>
 			<h1>Create Account</h1>
@@ -81,9 +83,9 @@ const Signup = () => {
 						className={styles.input}
 					/>
 					{error && <div className={styles.error_msg}>{error}</div>}
-					<Link to="/Readandagree"><button type="submit" className={styles.green_btn}>
+					<button type="submit" className={styles.green_btn}>
 						Sign Up
-					</button></Link>
+					</button>
 					<h5 style={{ color: 'white' }}>Already have an account? Log In</h5>
 				<Link to="/login">
 					<button type="button" className={styles.white_btn}>
@@ -98,7 +100,8 @@ const Signup = () => {
 				</form>
 			</div>
 		</div>
-		
+		</Form.Group>
+		</Form>
 	</div>
 );
 };

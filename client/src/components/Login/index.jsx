@@ -78,7 +78,7 @@ const Login = () => {
 						<button type="button" className={styles.white_btn}>
 							Sign Up
 						</button>
-					</Link>
+						</Link>
 					
 				</div>
 			</div>

@@ -6,11 +6,11 @@ const Readandagree = () => {
   return (
     <div class="rbackground">
       <div class="rvector">
-      <h4 >Please Read the terms and conditions before continuing.</h4>
-        <p class="rp"><h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      <h4 class="rline1"><b>Please Read the terms and conditions before continuing.</b></h4><br/>
+        <p ><h5 class="rp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Ornare nunc hendrerit lectus pellentesque dui sem rutrum. Porta duis turpis duis aliquam. 
           Mollis justo sed libero nunc dictum sit urna. Enim et turpis et id massa nunc. 
-          Proin semper sit pulvinar etiam donec.</h5></p>
+          Proin semper sit pulvinar etiam donec.</h5></p><br/>
           <input type="checkbox" id="check" name="ckeck" ></input>
   <label for="check">    I have read and agree the terms and conditions.</label>
           
