@@ -1,0 +1,87 @@
+.rbtn{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 16px;
+  
+  position: absolute;
+  width: 273px;
+  height: 50px;
+  left: 370px;
+  top: 500px;
+  font-size: l;
+  /* Iris/60 */
+  
+  background: #5c5ff091;
+  border-color: #FFFFFF;
+  border-radius: 6px;
+  }
+  .rbackground{
+    position: absolute;
+  width: 1517px;
+  height: 729px;
+  left: 0.0%;
+  top: 0.0%;
+  
+  background: url(../../images/im8.png);
+  background-size: cover;
+  }
+  
+  .rvector{
+    position: absolute;
+  
+  right: 10%;
+  
+  bottom: 20%;
+  
+  background: linear-gradient(154.49deg, rgba(121, 117, 131, 0.2) 5.35%, rgba(54, 53, 103, 0.2) 83.85%), rgba(51, 0, 255, 0.2);
+  backdrop-filter: blur(14px);
+  /* Note: backdrop-filter has minimal browser support */
+  
+  border-radius: 20px;
+  
+  width: 1000px;
+  height: 580px;
+  left: 250px;
+  top: 75px;
+  
+  /* h1/Bold 38px */
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 45px;
+  padding:2%;
+  color: #FFFFFF;
+  }
+  
+  .rvector.p{
+    position: absolute;
+  width: 868px;
+  height: 468px;
+  left: 343px;
+  top: 406px;
+  
+  /* h1/Bold 38px */
+  
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 45px;
+  
+  color: #FFFFFF;
+  }
+  
+  .rtext{
+    color:ghostwhite;
+  }
+  
+  .rline1{
+      font-size: 35px;
+  }
+  .rp{
+    font-size: 30px;
+  }

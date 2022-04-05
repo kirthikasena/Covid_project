@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+.lsbackground{
+  position: absolute;
+  width: 1517px;
+  height: 730px;
+  
+  
+background: url(../../images/im14.png);;
+background-size: cover;
+
+}
+
+.lsline1{
+  position: absolute;
+  left: 57.16%;
+  right: 0.01%;
+  top: 50.94%;
+  bottom: 28.17%;
+  font-family: Content;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+  transform: rotate(1.07deg);
+}
+
+.lsline2{
+  position: absolute;
+  left: 57.16%;
+  right: 0.01%;
+  top: 59.94%;
+  bottom: 20.17%;
+  font-family: Content;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  color: #FFFFFF; 
+  transform: rotate(1.07deg);
+}
+
+.lsbtn1{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 1px;
+  width: 110px;
+  height: 40px;
+  left: 1000.13px;
+  top: 550.97px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 42px;
+  border-color: black;
+  background: #FFFFFF;
+  border-radius: 6px;
+  text-align: center;
+  
+}
+
+.lsbtn2{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1px 1px;
+  width: 110px;
+  height: 40px;
+  left: 865.13px;
+  top: 550.97px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 42px;
+  border-color: black;
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+.lslabel{
+  position: absolute;
+
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+color: #7a36e7;
+
+display: flex;
+align-items: center;
+text-align: center;
+}
+
