@@ -1,18 +1,94 @@
-import im16 from "../../images/im16.png";
+import { ReactMic } from "react-mic";
+import React from "react";
+import  "./checkcough1.css";
+import MicRecorder from 'mic-recorder-to-mp3';
 import im2 from "../../images/im2.png";
-import "./styles.module.css";
-import { useState } from "react";
-import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-const Checkcough1 = () => {
-  return (
-    <div class="background">
-     <img src={im16} alt="image" class="img1"></img>
-     <img src={im2} alt="image" class="img2"></img>
-     <p class="line">Please press record , and record your cough</p>
-     <Link to="/Checkcough2"><button class="btn"><h3 class="text">Record</h3></button></Link>
-    </div>
-  );
-}
+const Mp3Recorder = new MicRecorder({ bitRate: 128 });
+
+class Checkcough1 extends React.Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      isRecording: false,
+      blobURL: '',
+      isBlocked: false,
+    };
+  }
+  
+
+  
+  start = () => {
+    this.setState({ record: true });
+    if (this.state.isBlocked) {
+      console.log('Permission Denied');
+    } else {
+      Mp3Recorder
+        .start()
+        .then(() => {
+          this.setState({ isRecording: true });
+        }).catch((e) => console.error(e));
+    }
+    
+  };
+
+  stop = () => {
+    this.setState({ record: false });
+    Mp3Recorder
+      .stop()
+      .getMp3()
+      .then(([buffer, blob]) => {
+        const blobURL = URL.createObjectURL(blob)
+        this.setState({ blobURL, isRecording: false });
+      }).catch((e) => console.log(e));
+      this.setState({ isRecording: false });
+  };
+  
+
+  onData(recordedBlob) {
+    console.log("chunk of real-time data is: ", recordedBlob);
+  }
+
+  onStop(recordedBlob) {
+    console.log("recordedBlob is: ", recordedBlob);
+  }
+
+  componentDidMount() {
+    navigator.getUserMedia({ audio: true },
+      () => {
+        console.log('Permission Granted');
+        this.setState({ isBlocked: false });
+      },
+      () => {
+        console.log('Permission Denied');
+        this.setState({ isBlocked: true })
+      },
+    );
+  }
+  render() {
+    return (
+      <div class="chbackground">
+        <img src={im2} alt="image" class="chimg2"></img>
+        <img src={im2} alt="image" class="chimg3"></img>
+        <h1 class="ch1line1">Record your shallow breath for 4 seconds</h1>
+        <div class="animationbox">
+          <ReactMic 
+          record={this.state.record}
+          className="sound-wave"
+          onStop={this.onStop}
+          onData={this.onData}
+          strokeColor="#000000"
+          backgroundColor="#FFFFFF"
+        /></div>
+          <button onClick={this.start} disabled={this.state.isRecording} class="chbtn1"><b>Record</b></button>
+          <button onClick={this.stop} disabled={!this.state.isRecording} class="chbtn2"><b>Stop</b></button>
+          <Link to="/Checkcough2"><button class="chbtn3"><b>Next</b></button></Link>
+          <audio src={this.state.blobURL} controls="controls" class="audiobox"/>
+      </div>
+    );
+    }
+  }
 
 export default Checkcough1;
+

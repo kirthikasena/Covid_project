@@ -4,7 +4,7 @@ const ResultSchema = new mongoose.Schema(
   {
     user: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
+      ref: "user",
     },
     probability: {
       type: Number
@@ -18,4 +18,4 @@ const ResultSchema = new mongoose.Schema(
 
 
 const Result = mongoose.model("result",ResultSchema);
-module.exports = { Result};
+module.exports = {Result};

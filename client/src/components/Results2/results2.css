@@ -1,23 +1,23 @@
-.background{
-    position: relative;
+.re2background{
+  position: relative;
   width: 1518px;
-  height: 730px;
-  
-  background: conic-gradient(from 180deg at 50% 50%, #128DFF 0deg, #623CEA 278.62deg, #128DFF 360deg);
+  height: 730px;  
+  background: linear-gradient(180deg, #4e68db 0%, #8f09f742 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: 1px solid #000000;
   box-sizing: border-box;
   backdrop-filter: blur(4px);
   }
   
-  .img1{
+  .re2img1{
     position: absolute;
-  left: 54.03%;
-  right: -8.75%;
-  top: 1%;
-  bottom: 13.67%;
+    left: 54.03%;
+    right: -8.75%;
+    top: 1%;
+    bottom: 13.67%;
   }
   
-  .img2{
+  .re2img2{
     position: absolute;
   right: 54.03%;
   left: 1.75%;
@@ -25,7 +25,7 @@
   bottom: 13.67%;
   }
   
-  .line1{
+  .re2line1{
     position: absolute;
   left: 4.65%;
   right: 35.35%;
@@ -36,12 +36,11 @@
   font-style: normal;
   font-weight: normal;
   font-size: 64px;
-  line-height: 74px;
-  
+  line-height: 74px;  
   color: #FFFFFF;
   }
   
-  .line2{
+  .re2line2{
     position: absolute;
   left: 4.65%;
   right: 35.35%;
@@ -56,6 +55,7 @@
   
   color: #FFFFFF;
   }
+  
   #menuToggle {
     display: block;
     position: absolute;
@@ -71,7 +71,7 @@
   #menuToggle a {
     text-decoration: none;
     color: #232323;
-   
+    font-family: Convergence;
     transition: color 0.3s ease;
   }
    

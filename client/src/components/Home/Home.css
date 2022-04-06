@@ -1,53 +1,142 @@
+
 .background{
-    position: relative;
-  width: 1518px;
-  height: 730px;
-  
-  background: conic-gradient(from 180deg at 50% 50%, #128DFF 0deg, #623CEA 278.62deg, #128DFF 360deg);
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  backdrop-filter: blur(4px);
-  }
-  
-  .img{
     position: absolute;
-  left: 54.03%;
-  right: -8.75%;
-  top: 1%;
-  bottom: 13.67%;
+    width: 1515px;
+    height: 730px;
+    top: 0.0%;
+    left:0.0%;
+    
+  background: url(../../images/im16.png);
+  background-size: cover;
   }
   
-  .line1{
+  .img1{
     position: absolute;
-  left: 4.65%;
-  right: 35.35%;
-  top: 30.89%;
-  bottom: 38.18%;
+  left: 0.46%;
+  right: 42.3%;
+  bottom: 10.33%;
+  width: 600px;
+  height: 500px;
   
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 64px;
-  line-height: 74px;
+}
   
-  color: #FFFFFF;
-  }
-  
-  .line2{
+  .img2{
     position: absolute;
-  left: 4.65%;
-  right: 35.35%;
-  top: 44.89%;
-  bottom: 25.18%;
+  left: 30.72%;
+  right: 63.47%;
+  top: -40.17%;
+  bottom: 71.06%;
+  width: 500px;
+    height: 500px;
   
-  font-family: Yeseva One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 45px;
-  line-height: 74px;
-  
-  color: #FFFFFF;
   }
+  
+  .img3{
+    position: absolute;
+    left: -20.01%;
+    right: 37.5%;
+    top: -30.2%;
+    bottom: 12.3%;
+    width: 600px;
+    height: 500px;
+  }
+  
+  .im4{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    
+  }
+  .Hline1{
+    position: absolute;
+    left: 40%;
+    right:40%;
+    top: 10%;
+    align-items: center;
+    color: black;
+    font-family: Convergence;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 48px;
+    /* or 75% */
+    
+    letter-spacing: -1px;
+  
+  
+  }
+  .Hline2{
+    position: absolute;
+    left: 30%;
+    
+    top: 26%;
+    
+    color: black;
+    font-family: Convergence;
+    font-style: normal;
+    font-weight: normal;
+    
+    /* or 75% */
+    
+    letter-spacing: -1px;
+  
+  
+  }
+  
+  .hbtn1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 1px;
+    width: 110px;
+    height: 40px;
+    left: 43%;
+    top: 50%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    border: none;
+    background: white;
+    border-radius: 6px;
+    text-align: center;
+    
+  }
+  
+  .hbtn2{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 1px;
+    width: 110px;
+    height: 40px;
+    left: 51%;
+    top: 50%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    border: none;
+    background: white;
+    border-radius: 6px;
+  }
+  
+ 
+  button:hover {
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+   
   #menuToggle {
     display: block;
     position: absolute;
@@ -63,7 +152,7 @@
   #menuToggle a {
     text-decoration: none;
     color: #232323;
-   
+    font-family: Convergence;
     transition: color 0.3s ease;
   }
    
@@ -152,7 +241,7 @@
     padding: 50px;
     padding-top: 125px;
    
-    background: #ededed;
+    background: #ffffff;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     /* to stop flickering of text in safari */

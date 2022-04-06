@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./styles.module.css";
 
 
@@ -11,14 +11,17 @@ const Login = () => {
 	const handleChange = ({ currentTarget: input }) => {
 		setData({ ...data, [input.name]: input.value });
 	};
+	const navigate = useNavigate();
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
 			const url = "http://localhost:8080/api/auth";
 			const { data: res } = await axios.post(url, data);
-			localStorage.setItem("token", res.data);
-			window.location = "/";
+			// localStorage.setItem("token", res.data);
+			localStorage.setItem('token',JSON.stringify(data));
+			navigate('/Readandagree');
+			// window.location = "/";
 		} catch (error) {
 			if (
 				
@@ -78,12 +81,34 @@ const Login = () => {
 						<button type="button" className={styles.white_btn}>
 							Sign Up
 						</button>
-					</Link>
+						</Link>
 					
 				</div>
 			</div>
 		</div>
 	</div>
+	<nav role="navigation">
+  <div id="menuToggle">
+     
+    <input type="checkbox" />
+     
+    
+    <span></span>
+    <span></span>
+    <span></span>
+     
+    
+    <ul id="menu">
+    
+    <Link to="/Login"><a><li>Log In</li></a></Link><br></br>
+    <Link to="/Signup"><a><li>Sign up</li></a></Link><br></br>
+    <Link to="/Shallowbreath"><a><li>Record</li></a></Link><br></br>
+	<Link to="/Home"><a><li>Log out</li></a></Link> <br></br> 
+    <Link to=""><a><li>Report</li></a></Link>
+      
+    </ul>
+  </div>
+</nav>
 	</div>
 	
 	);

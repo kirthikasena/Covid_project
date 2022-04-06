@@ -3,20 +3,20 @@ import im5 from "../../images/im5.png";
 import { useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-import "./styles.module.css";
+import "./results2.css";
 
 const Results2 = () => {
   return (
-    <div class = "background">
+    <div class = "re2background">
       
-      <img src={im13} alt="image" class="img1"></img>
-      <img src={im5} alt="image" class="img2"></img>
-      <p class="line1">You have tested Negative!! </p>
-      <p class="line2">we are pleased to say you are healthy</p>
-
+      <img src={im13} alt="image" class="re2img1"></img>
+      <img src={im5} alt="image" class="re2img2"></img>
+      <p class="re2line1">You have tested Negative!! </p>
+      <p class="re2line2">we are pleased to say you are healthy</p>
+      
       <nav role="navigation">
   <div id="menuToggle">
-    
+     
     <input type="checkbox" />
      
     
@@ -26,10 +26,11 @@ const Results2 = () => {
      
     
     <ul id="menu">
-      <a href="#"><li>Log In</li></a>
-      <a href="#"><li>Sign up</li></a>
-      <a href="#"><li>Record</li></a>
-      <a href="#"><li>Report</li></a>
+    <Link to="/Login"><a><li>Log In</li></a></Link><br></br>
+    <Link to="/Signup"><a><li>Sign up</li></a></Link><br></br>
+    <Link to="/Shallowbreath"><a><li>Record</li></a></Link><br></br>
+    <Link to="/Home"><a><li>Log out</li></a></Link> <br></br> 
+    <Link to=""><a><li>Report</li></a></Link>
       
     </ul>
   </div>
