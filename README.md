@@ -2,11 +2,11 @@
 
 This project is a web application that saves user profiles and detect covid-19 .The user has to record six type of sounds such as follows:
 
-Shallow cough
-Shallow breath
-heavy cough
-vowel E 
-vowel O
+Shallow cough,
+Shallow breathn
+heavy cough,
+vowel E ,
+vowel O,
 fast counting(from 1 to 10)
 
 These sounds are inserted into deep learning models for each type.The 6  models that are used is a  type of Convolutional neural Network.This acts as a classifier and predicts if the user is covid positive and displays it to the user.
