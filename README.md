@@ -1,6 +1,7 @@
 # Covid_project
 
-This project is a web application that saves user profiles and detect covid-19 .The user has to record six type of sounds such as follows:
+This project is a web application and mobile application  that saves user profiles and detect covid-19.this can be used as pre-screen tool before taking a PCR test.
+The user has to record six type of sounds such as follows:
 
 Shallow cough,
 Shallow breathn
